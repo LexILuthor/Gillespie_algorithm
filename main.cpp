@@ -2,7 +2,7 @@
 #include <fstream>
 #include <vector>
 #include<cstdlib>
-#include "myFunctions.h"
+//#include "myFunctions.h"
 #include "gillespie.h"
 
 int main() {
