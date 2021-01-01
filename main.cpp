@@ -76,7 +76,7 @@ int main() {
     if (!outfile.is_open()) {
         std::cout << "Unable to open file";
     } else {
-        for (int i = 0; i < SEIR[0].size(); i++) {
+        for (int i = 0; i < temp.size(); i++) {
 
             outfile << SEIR[0][i] << ",\t" << SEIR[1][i] << ",\t" << SEIR[2][i] << ",\t" << SEIR[3][i] << ",\t"
                     << temp[i] << "\n";
