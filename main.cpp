@@ -7,8 +7,8 @@
 
 int main() {
 
-    char outputpath[] = "../OutputFIle/gillespie.csv";
-    char inputpath[] = "../OutputFIle/InputGillespie.txt";
+    std::string outputpath = "../OutputFIle/gillespie.csv";
+    std::string inputpath = "../OutputFIle/InputGillespie.txt";
 
     //Number of steps
     int nSteps;

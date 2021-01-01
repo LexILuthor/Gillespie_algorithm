@@ -15,7 +15,7 @@ gillespie(int nSteps, int N, double beta, double ny, double gamma, std::vector<d
     std::default_random_engine generator(0);
 
 
-    std::vector<std::vector<int> > SEIR(4, std::vector<int>(1, 0));
+    std::vector<std::vector<int> > SEIR(4, std::vector<int>(N, 0));
 
 
     double move = (double) 1 / N;
@@ -66,13 +66,13 @@ gillespie(int nSteps, int N, double beta, double ny, double gamma, std::vector<d
         double tmp = rand() / ((double) RAND_MAX + 1);
         if (tmp < se) {
             //new Exposed
-            new_Exposed(SEIR,j);
+            new_Exposed(SEIR, j);
         } else if (tmp < (se + ei)) {
             //new infected
-            new_Infected(SEIR,j);
+            new_Infected(SEIR, j);
         } else {
             //new Recovered
-            new_Recovered(SEIR,j);
+            new_Recovered(SEIR, j);
         }
         j++;
     }
