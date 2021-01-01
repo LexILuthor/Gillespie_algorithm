@@ -7,8 +7,8 @@
 
 int main() {
 
-    char outputpath[] = "C:\\Users\\popcorn\\Desktop\\0\\UniTo\\Tesi\\Pugliese\\Modelli Probabilistici\\Gillespie_algorithm\\OutputFIle\\gillespie.csv";
-    char inputpath[] = "C:\\Users\\popcorn\\Desktop\\0\\UniTo\\Tesi\\Pugliese\\Modelli Probabilistici\\Gillespie_algorithm\\OutputFIle\\InputGillespie.txt";
+    char outputpath[] = "../OutputFIle/gillespie.csv";
+    char inputpath[] = "../OutputFIle/InputGillespie.txt";
 
     //Number of steps
     int nSteps;
