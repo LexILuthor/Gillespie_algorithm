@@ -15,7 +15,7 @@ gillespie(int nSteps, int N, double beta, double ny, double gamma, std::vector<d
     std::default_random_engine generator(0);
 
 
-    std::vector<std::vector<int> > SEIR(4, std::vector<int>(N, 0));
+    std::vector<std::vector<int> > SEIR(4, std::vector<int>(1, 0));
 
 
     double move = (double) 1 / N;
